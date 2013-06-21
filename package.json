@@ -1,0 +1,15 @@
+{
+  "name": "streetmix-router",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "config": "0.4.22",
+    "request": "2.21.x",
+    "requireindex": "1.0.0"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "license": "MIT"
+}
