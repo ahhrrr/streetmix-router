@@ -1,10 +1,14 @@
 var http = require('http'),
+    connect = require('connect'),
     router = require(__dirname + '/lib/router.js')
     requestHandlers = require(__dirname + '/lib/request_handlers')
 
+var app = connect()
+  .use(connect.query())
+  .use(connect.cookieParser())
+
 var r = router()
-console.log(requestHandlers)
-r.addRouteHandlers(requestHandlers)
+r.addRequestHandlers(requestHandlers)
 
 var server = http.createServer(function(req, res) {
   r.route(req, res)
