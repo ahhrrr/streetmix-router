@@ -8,19 +8,20 @@ In the longer run, this project may go away and be replaced by something like [A
 
 ## How it works
 
- O
--+-                 +---------------+                +--------------------------------+ 
- | --- Request ---> | streetmix.net | --- CNAME ---> | streetmix-router.herokuapp.com | 
- ^                  +---------------+                +--------------------------------+
-/ \                                                                  |
-                                                                 HTTP PROXY
-                                                                     |
-                                                         +-----------+-----------+
-                                                         |                       |
-                                                     no bucket               bucket = 2
-                                                       cookie                  cookie
-                                                         |                       |
-                                                         v                       v
-                                      +---------------------------+     +----------------------------+
-                                      |  streetmix.herokuapp.com  |     | streetmix-v2.herokuapp.com |
-                                      +---------------------------+     +----------------------------+
+     O
+    -+-                 +---------------+                +--------------------------------+ 
+     | --- Request ---> | streetmix.net | --- CNAME ---> | streetmix-router.herokuapp.com | 
+     ^                  +---------------+                +--------------------------------+
+    / \                                                                  |
+                                                                     HTTP PROXY
+                                                                         |
+                                                             +-----------+-----------+
+                                                             |                       |
+                                                         no bucket               bucket = 2
+                                                           cookie                  cookie
+                                                             |                       |
+                                                             v                       v
+                                          +---------------------------+     +----------------------------+
+                                          |  streetmix.herokuapp.com  |     | streetmix-v2.herokuapp.com |
+                                          +---------------------------+     +----------------------------+
+    
