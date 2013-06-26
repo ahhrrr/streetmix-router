@@ -1,10 +1,10 @@
 module.exports = {
   routers: {
     v1: {
-      baseuri: 'http://streetmix.net'
+      baseuri: 'http://streetmix.herokuapp.com'
     },
     v2: {
-      baseuri: 'http://streetmix-staging.herokuapp.com'
+      baseuri: 'http://streetmix-v2.herokuapp.com'
     }
   }
 }
