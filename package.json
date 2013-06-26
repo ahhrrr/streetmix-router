@@ -5,6 +5,7 @@
   "dependencies": {
     "config": "0.4.22",
     "connect": "2.7.11",
+    "date-utils": "1.2.x",
     "request": "2.21.x",
     "requireindex": "1.0.0"
   },
